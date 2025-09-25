@@ -1,0 +1,26 @@
+//Inicio de labels de tela inicial
+"label_prepare" = "Prepare";
+"label_exercise" = "Exercise";
+"label_rest" = "Rest";
+"label_rounds" = "Rounds";
+"label_total" = "Total Time";
+"btn_start" = "Start";
+"label_phase_exercise" = "Exercise";
+"label_phase_rest" = "Rest";
+"label_phase_prepare" = "Preparo";
+"label_phase" = "Phase: %@";
+
+//Fim de labels de tela incial
+
+//Inicio de label da tela historico
+"label_historic" = "Historic";
+"label_total_time" = "Total Time";
+//Fim de labels da tela historico
+
+//Inicio de labels de tela Referencias
+"label_references" = "References";
+//Fim de labels de tela Referencias
+
+//Inicio de labels de tela Ajuda
+"label_help" = "Help";
+//Fim de labels de tela Ajuda
