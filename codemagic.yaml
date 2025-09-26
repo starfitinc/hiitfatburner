@@ -1,0 +1,30 @@
+workflows:
+  ios-workflow:
+    name: iOS TestFlight
+    max_build_duration: 60
+    environment:
+      vars:
+        APPLE_ID: starfitinc2@gmail.com
+        APP_SPECIFIC_PASSWORD: krxb-yhtn-jtjr-hrgy
+    scripts:
+      - name: Install dependencies
+        script: |
+          if [ -f Podfile ]; then
+            pod install
+          fi
+    triggering:
+      events:
+        - push
+    ios:
+      xcode: "16.2"
+      scheme: "HiitFatBurner"
+      export_method: "app-store"
+      build_configuration: "Release"
+      project_path: "."
+      code_signing:
+        automatic_signing: true
+    publishing:
+      app_store_connect:
+        apple_id: $APPLE_ID
+        app_specific_password: $APP_SPECIFIC_PASSWORD
+        distribute_external_testers: true
